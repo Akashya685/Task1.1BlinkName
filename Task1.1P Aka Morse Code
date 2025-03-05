@@ -1,0 +1,71 @@
+//Akashya A.- K-.- A.- S... H.... Y-.-- A.- my name is morse code
+
+void setup() {
+  pinMode(LED_BUILTIN, OUTPUT);
+  RelaxPoint()
+  //A .-
+  dot();
+  dash();
+  RelaxPoint(); // RelaxPoint 
+
+  //K -.-
+  dash();
+  dot();
+  dash();
+  RelaxPoint(); //RelaxPoint
+
+  // A .-
+  dot();
+  dash();
+  RelaxPoint(); //RelaxPoint
+ 
+  //S ...
+  dot();
+  dot();
+  dot();
+  RelaxPoint(); //RelaxPoint
+
+  //H ....
+  dot();
+  dot();
+  dot();
+  dot();
+  RelaxPoint(); //RelaxPoint
+
+  //Y -.--
+  dash();
+  dot();
+  dash();
+  dash();
+  RelaxPoint(); //RelaxPoint
+
+  // A .-
+  dot();
+  dash();
+  RelaxPoint(); //RelaxPoint
+}
+
+// Dot blink
+void dot() {
+  digitalWrite(LED_BUILTIN, HIGH); //LED ON
+  delay(200);                      //Wait 
+  digitalWrite(LED_BUILTIN, LOW);  //LED OFF
+  delay(900);                      //Space between elements of the same letter
+}
+
+// Longer = blinking a dash
+void dash() {
+  digitalWrite(LED_BUILTIN, HIGH); 
+  delay(600);                      //Longer duration for dash
+  digitalWrite(LED_BUILTIN, LOW);  
+  delay(900);                     
+}
+
+//Creating a point to halt for a bit, this improves the readability of the Morse code
+void RelaxPoint() {
+  delay(600);   //  time units for space between letters
+}
+
+//The loop function to prevent infinite looping
+void loop() {  
+}
