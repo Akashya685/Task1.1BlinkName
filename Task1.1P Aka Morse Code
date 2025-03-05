@@ -63,7 +63,7 @@ void dash() {
 
 //Creating a point to halt for a bit, this improves the readability of the Morse code
 void RelaxPoint() {
-  delay(600);   //  time units for space between letters
+  delay(800);   //Increasing the delay before the code executes, increases individuals preparedness to view the blinks
 }
 
 //The loop function to prevent infinite looping
