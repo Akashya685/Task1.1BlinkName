@@ -86,7 +86,7 @@ void letterH(){
 }
 void letterY() {//Y -.--
   dash();
-  dot();
+  dot(); 
   dash();
   dash();
   RelaxPoint(); //RelaxPoint
