@@ -1,50 +1,96 @@
 //Akashya A.- K-.- A.- S... H.... Y-.-- A.- my name is morse code
-
 void setup() {
   pinMode(LED_BUILTIN, OUTPUT);
-  RelaxPoint(); 
-  //A .-
+}
+
+void loop() {
+  RelaxPoint();
+  letterA(); // A .-
+  letterK(); // K -.-
+  letterA(); // A .-
+  letterS(); // S ...
+  letterH(); // H ....
+  letterY(); // Y -.--
+  letterA(); // A .-
+}
+//    void(// //
+//   dot();
+//   dash();
+//   RelaxPoint(); // RelaxPoint 
+
+//   //K -.-
+//   dash();
+//   dot();
+//   dash();
+//   RelaxPoint(); //RelaxPoint
+
+//   // A .-
+//   dot();
+//   dash();
+//   RelaxPoint(); //RelaxPoint
+ 
+//   //S ...
+//   dot();
+//   dot();
+//   dot();
+//   RelaxPoint(); //RelaxPoint
+
+//   //H ....
+//   dot();
+//   dot();
+//   dot();
+//   dot();
+//   RelaxPoint(); //RelaxPoint
+
+//   //Y -.--
+//   dash();
+//   dot();
+//   dash();
+//   dash();
+//   RelaxPoint(); //RelaxPoint
+
+//   // A .-
+//   dot();
+//   dash();
+//   RelaxPoint(); //RelaxPoint
+
+void letterA(){
+    //A .-
   dot();
   dash();
   RelaxPoint(); // RelaxPoint 
+}
 
+void letterK(){
   //K -.-
   dash();
   dot();
   dash();
   RelaxPoint(); //RelaxPoint
+}
 
-  // A .-
-  dot();
-  dash();
-  RelaxPoint(); //RelaxPoint
- 
+void letterS(){
   //S ...
   dot();
   dot();
   dot();
-  RelaxPoint(); //RelaxPoint
-
+  RelaxPoint(); //RelaxPoint // RelaxPoint 
+}
+void letterH(){
   //H ....
   dot();
   dot();
   dot();
   dot();
-  RelaxPoint(); //RelaxPoint
-
-  //Y -.--
+  RelaxPoint();
+}
+void letterY() {//Y -.--
   dash();
   dot();
   dash();
-  dash();
-  RelaxPoint(); //RelaxPoint
-
-  // A .-
-  dot();
   dash();
   RelaxPoint(); //RelaxPoint
 }
-
 // Dot blink
 void dot() {
   digitalWrite(LED_BUILTIN, HIGH); //LED ON
@@ -63,9 +109,5 @@ void dash() {
 
 //Creating a point to halt for a bit, this improves the readability of the Morse code
 void RelaxPoint() {
-  delay(800);   //Increasing the delay before the code executes, increases individuals preparedness to view the blinks
-}
-
-//The loop function to prevent infinite looping
-void loop() {  
+  delay(600);   //  time units for space between letters
 }
